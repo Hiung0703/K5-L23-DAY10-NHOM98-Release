@@ -1,0 +1,4 @@
+{"event": "inject", "release_id": "lab250_05fa3dd27dd4", "seed": 98007, "detail": "r98007"}
+{"event": "train", "release_id": "lab250_05fa3dd27dd4", "run_id": "R-021"}
+{"event": "decision", "release_id": "lab250_05fa3dd27dd4", "decision": "HOLD", "detail": "P3: 10 rule findings / 250 images = 4 percent exceeds 2 percent; P2 proposals pending human verification; owner HO XUAN HUNG"}
+{"event": "release", "release_id": "lab250_05fa3dd27dd4_v2", "parent": "lab250_05fa3dd27dd4", "decision": "HOLD", "detail": "Versioned handover package; 242 images, 1708 labels, 8 rework; NOT approved for training; unresolved 000000014831; owners NGUYEN XUAN ANH and HO XUAN HUNG"}
