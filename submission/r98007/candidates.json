@@ -1,0 +1,290 @@
+{
+  "thresholds": {
+    "match_iou": 0.3,
+    "class_iou": 0.65,
+    "class_coverage": 0.85,
+    "drift_coverage": 0.8,
+    "missing_iou": 0.1,
+    "missing_coverage": 0.2,
+    "min_area_pixels": 200,
+    "min_area_fraction": 0.001,
+    "merge_part": 0.2,
+    "merge_total": 0.75,
+    "merge_box_iou": 0.25,
+    "merge_max_part": 0.8,
+    "merge_shared_pixels": 0.1,
+    "existing_match_iou": 0.85,
+    "existing_match_coverage": 0.9
+  },
+  "candidates": [
+    {
+      "image": "000000001818",
+      "type": "bbox_drift",
+      "segment_id": 8092282,
+      "panoptic_class": "zebra",
+      "segment_bbox": [
+        0,
+        1,
+        638,
+        424
+      ],
+      "boxes": [
+        {
+          "index": 1,
+          "class": "zebra",
+          "valid_class": true,
+          "bbox": [
+            178.04032000000004,
+            1.4398999999999773,
+            461.95968,
+            423.56010000000003
+          ]
+        }
+      ],
+      "reason": "Same-class box leaves a substantial part of mask outside",
+      "metrics": [
+        {
+          "iou": 0.7179,
+          "mask_coverage": 0.5018
+        }
+      ]
+    },
+    {
+      "image": "000000012748",
+      "type": "class_disagreement",
+      "segment_id": 2369328,
+      "panoptic_class": "horse",
+      "segment_bbox": [
+        1,
+        51,
+        239,
+        505
+      ],
+      "boxes": [
+        {
+          "index": 1,
+          "class": "cow",
+          "valid_class": true,
+          "bbox": [
+            1.370160000000018,
+            50.35999999999998,
+            240.34992,
+            505.40992000000006
+          ]
+        }
+      ],
+      "reason": "Choose class_swap or category_swap after viewing the object",
+      "metrics": [
+        {
+          "iou": 0.9896,
+          "mask_coverage": 1.0
+        }
+      ]
+    },
+    {
+      "image": "000000014831",
+      "type": "missing_box",
+      "segment_id": 5594996,
+      "panoptic_class": "cat",
+      "segment_bbox": [
+        1,
+        235,
+        479,
+        404
+      ],
+      "boxes": [],
+      "reason": "Significant non-crowd thing segment has no nearby covering box",
+      "metrics": []
+    },
+    {
+      "image": "000000017115",
+      "type": "instance_merge",
+      "segment_id": 4474975,
+      "panoptic_class": "zebra",
+      "segment_bbox": [
+        2,
+        97,
+        439,
+        505
+      ],
+      "boxes": [
+        {
+          "index": 2,
+          "class": "zebra",
+          "valid_class": true,
+          "bbox": [
+            2.479914000000009,
+            96.97983999999998,
+            204.89015799999999,
+            498.68032
+          ]
+        },
+        {
+          "index": 1,
+          "class": "zebra",
+          "valid_class": true,
+          "bbox": [
+            242.70995399999998,
+            122.43999999999997,
+            197.919996,
+            479.63968
+          ]
+        }
+      ],
+      "reason": "One segment covers two separate same-class boxes",
+      "metrics": [
+        {
+          "iou": 0.4609,
+          "mask_coverage": 0.4849
+        },
+        {
+          "iou": 0.4281,
+          "mask_coverage": 0.5151
+        }
+      ]
+    },
+    {
+      "image": "000000020333",
+      "type": "class_disagreement",
+      "segment_id": 4617106,
+      "panoptic_class": "tie",
+      "segment_bbox": [
+        178,
+        284,
+        64,
+        227
+      ],
+      "boxes": [
+        {
+          "index": 1,
+          "class": "fork",
+          "valid_class": true,
+          "bbox": [
+            178.3397525,
+            283.33024,
+            63.280119,
+            227.23008
+          ]
+        }
+      ],
+      "reason": "Choose class_swap or category_swap after viewing the object",
+      "metrics": [
+        {
+          "iou": 0.984,
+          "mask_coverage": 1.0
+        }
+      ]
+    },
+    {
+      "image": "000000022935",
+      "type": "instance_merge",
+      "segment_id": 9984846,
+      "panoptic_class": "person",
+      "segment_bbox": [
+        21,
+        18,
+        613,
+        457
+      ],
+      "boxes": [
+        {
+          "index": 2,
+          "class": "person",
+          "valid_class": true,
+          "bbox": [
+            20.399679999999982,
+            18.360000000000003,
+            437.05024000000003,
+            455.30016
+          ]
+        },
+        {
+          "index": 3,
+          "class": "person",
+          "valid_class": true,
+          "bbox": [
+            422.83008,
+            25.889999999999986,
+            211.42016,
+            448.71984000000003
+          ]
+        }
+      ],
+      "reason": "One segment covers two separate same-class boxes",
+      "metrics": [
+        {
+          "iou": 0.7087,
+          "mask_coverage": 0.6077
+        },
+        {
+          "iou": 0.3381,
+          "mask_coverage": 0.4468
+        }
+      ]
+    },
+    {
+      "image": "000000023126",
+      "type": "class_disagreement",
+      "segment_id": 3158064,
+      "panoptic_class": "sheep",
+      "segment_bbox": [
+        0,
+        279,
+        489,
+        149
+      ],
+      "boxes": [
+        {
+          "index": 1,
+          "class": "horse",
+          "valid_class": true,
+          "bbox": [
+            0.0003200000000092018,
+            278.699904,
+            489.39968,
+            149.300096
+          ]
+        }
+      ],
+      "reason": "Choose class_swap or category_swap after viewing the object",
+      "metrics": [
+        {
+          "iou": 0.9972,
+          "mask_coverage": 1.0
+        }
+      ]
+    },
+    {
+      "image": "000000025560",
+      "type": "class_disagreement",
+      "segment_id": 9081758,
+      "panoptic_class": "cat",
+      "segment_bbox": [
+        134,
+        189,
+        376,
+        155
+      ],
+      "boxes": [
+        {
+          "index": 2,
+          "class": "dog",
+          "valid_class": true,
+          "bbox": [
+            133.44992000000002,
+            185.1,
+            376.54976,
+            159.31008
+          ]
+        }
+      ],
+      "reason": "Choose class_swap or category_swap after viewing the object",
+      "metrics": [
+        {
+          "iou": 0.9715,
+          "mask_coverage": 1.0
+        }
+      ]
+    }
+  ]
+}
