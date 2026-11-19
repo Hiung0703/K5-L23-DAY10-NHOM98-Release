@@ -1,0 +1,4 @@
+image,type,verdict,note
+"img_0048","class_swap","rejected","HỒ XUÂN HÙNG: Vùng panoptic và box detection đều chỉ đúng chiếc sofa, không thấy bất đồng lớp."
+"img_0097","class_swap","confirmed","HỒ XUÂN HÙNG: Vật trong box màu xanh là TV treo tường, detection ghi laptop nên detection bị sai lớp."
+"img_0205","instance_merge","confirmed","HỒ XUÂN HÙNG: Hai vali là hai vật riêng biệt nhưng lớp phủ panoptic gộp chúng vào cùng một segment."

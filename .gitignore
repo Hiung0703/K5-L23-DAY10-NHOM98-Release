@@ -8,3 +8,6 @@ __pycache__/
 *.zip
 /hidden
 /delivery
+submission/de_an/rules.json
+submission/de_an/review.html
+submission/de_an/review.assignments.csv
